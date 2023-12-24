@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">My profile</a></li>
+        <li><a href="form.html">Registration form</a></li>
+    </ul><br><br>
+
+    <img src="./images/AltSchool.png" alt="altschool logo"><br><br>
+
+    <h1>Alt School Registration Form</h1>
+    <p>Fill in Your detials</p>
+    <form action="/submit" method="post">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" placeholder="Enter first name" required>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" placeholder="Enter last name" required><br><br>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" required>
+            <option value="gender">Select gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob"><br><br>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" placeholder="Enter email address" required>
+        <label for="edu">Education Level</label>
+        <select name="edu" id="edu" required>
+            <option value="edu" selected>Select level education</option>
+            <option value="bsc">Bsc</option>
+            <option value="msc">Msc</option>
+            <option value="diploma">Diploma</option>
+            <option value="phd">Doctorate(PhD)</option>
+            <option value="sss">High School/Secondary School</option>
+            <option value="graduate">Under Graduate</option>
+            <option value="jss">Junior/Middle School</option>
+            <option value="postgrad">Post Graduate</option>
+        </select><br><br>
+        <label for="country">Country</label>
+        <select name="country" id="country" required>
+            <option value="country" selected>Select your country</option>
+            <option value="salone">Sierra Leone</option>
+            <option value="naija">Nigeria</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="china">China</option>
+            <option value="france">France</option>
+            <option value="ghana">Ghana</option>
+        </select>
+        <label for="city">State/City of Residence</label>
+        <input type="text" name="city" placeholder="Enter your state of residence" required><br><br>
+        <label for="status">Employment Status</label>
+        <select name="status" id="status">
+            <option value="status">Select employment status</option>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="selfemployed">Self-Employed</option>
+        </select>
+        <label for="number">Phone Number</label>
+        <input type="number" name="number" placeholder="038286538" required><br><br>
+        <label for="course">Choose School</label>
+        <select name="course" id="course">
+            <option value="course">Select school</option>
+            <option value="soe">School of Engineering(SOE)</option>
+            <option value="sod">School of Data(SOD)</option>
+            <option value="sop">School of Product(SOP)</option>
+        </select>
+        <label for="courseofstudy">Choose Course of Study</label>
+        <select name="courseofstudy" id="cos">
+            <option value="cos">Select course</option>
+            <option value="fe">Frontend Engineering
+            </option>
+            <option value="be">Backend Engineering</option>
+            <option value="ce">Cloud Engineering</option>
+            <option value="da">Data Analyst</option>
+            <option value="dm">Data Management</option>
+        </select><br><br>
+        <label for="aboutus">How did you hear about us?</label>
+        <select name="aboutus" id="aboutus">
+            <option value="select">Select channel</option>
+            <option value="twt">Twitter</option>
+            <option value="fb">Facebook</option>
+            <option value="ld">Linkedin</option>
+            <option value="yt">Youtube</option>
+            <option value="fd">Friend</option>
+            <option value="sapp">Whatsapp</option>
+        </select>
+
+        <label for="schipp">Scholarships/Discount Code (optional)</label>
+        <input type="text" id="scholarship" placeholder="Scholarship or student ID or discount code"><br><br>
+
+        <p>By clicking continue, I agree to  <a href="#">Terms of Use</a> and acknowledge that I have read the  <a href="#">Privacy Policy</a>.</p><br>
+
+        <button>Proceed</button>
+    </form>
+
+    <p>Already have an account? <a href="#">Sign In</a></p>
+</body>
+</html>
